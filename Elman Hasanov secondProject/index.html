@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- ---------------------------------- -->
+    <!-- ------------FONTAWESOME ICON CDN--------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- ---------------------------------------------------------- -->
+    <!-- ---------------BOOTSTRAP ICON CDN-------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css"
+      integrity="sha512-YBSrHBAMjFhWHodf0RF58XB/x9lmuwBtyJv1LWDHQa1nOaWNXfG3Etc/lEXfW+qBx8ne79JnzccDs59je/ccVA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- --------------------------------258px-YA QEDER ELA GORUNTU----------------------------- -->
+
+    <header>
+      <div class="container pt-3 Home" style="color: #a3a3a3">
+        <img
+          src="https://ispanadicto.az/static/media/new-logo.d025a21a.png"
+          alt=""
+          style="width: 40px; height: 40px"
+        />
+        <div class="Headers">
+          <div class="headerLeft">
+            <ul class="">
+              <a href="./index.html" style="text-decoration: none;"><li type="none" class="px-3 ms-3 NavbarLeftLi">Ana sehife</li></a>
+              <a href="./xidmetlerimiz.html" style="text-decoration: none; color: grey;"> <li type="none" class="mx-2 px-3 NavbarLeftLi">Xidmetlerimiz </li></a>
+              <a href="./tani.html" style="text-decoration: none; color: grey;"><li type="none" class="px-3 NavbarLeftLi">Bizi tani </li></a>
+              <a href="./elaqe.html" style="text-decoration: none; color: grey;"> <li type="none" class="ms-2 px-3 NavbarLeftLi">Elaqe</li></a>
+            </ul>
+          </div>
+          <div class="headerRight">
+
+            <ul class="drop">
+              <li type="none" class="px-1 NavbarRightLi">Az</li>
+              <li type="none" class="ps-1 mx-2 NavbarRightLi">Es</li>
+              <li type="none" style="font-size: 20px" class="ms-2 me-4">
+                <i class="bi bi-filter-square sagICon"></i>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+      <ul class="onMobileMenu w-100 " style=" padding-left: 0;z-index: 10000;background-color: white;">
+        <a href="./index.html" style="text-decoration: none;"><li type="none" class="w-100 d-flex justify-content-center py-3 mobil"  >Ana sehife</li></a>
+        <a href="./xidmetlerimiz.html" style="text-decoration: none; color: grey;"> <li  type="none" class="w-100 d-flex justify-content-center py-3 mobil" >Xidmetlerimiz</li></a>
+          <a href="./tani.html" style="text-decoration: none; color: grey;"><li  type="none" class="w-100 d-flex justify-content-center py-3 mobil" >Bizi tani</li></a>
+            <a href="./elaqe.html" style="text-decoration: none; color: grey;"><li  type="none" class="w-100 d-flex justify-content-center py-3 mobil" >Elaqe</li></a>
+      </ul>
+      <!-- ------------------------------ -->
+      <!-- ------------------------------ -->
+    </header>
+    <main class="pt-5">
+      <div
+        class="container pt-5 d-flex flex-column align-items-center text-white"
+      >
+        <h1 >Ispanadicto</h1>
+        <p class="HeadTextContent">Azerbaycanin ilk online Ispan dili platformasi</p>
+        <div
+          class="input-group flex-nowrap align-items-center autocomplete"
+          style="max-width: 500px"
+        >
+            <!-- <input
+              id="myInput"
+              type="text"
+              name="myCountry"
+              placeholder="Country"
+            /> -->
+          <!-- <input type="submit" /> -->
+          <input
+            type="text"
+            class="form-control position-relative input SearchText"
+            placeholder="Axtarin..."
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+            style="border-radius: 20px !important"
+            id="myInput"
+            autocomplete="off"
+            oninput="InputValue()"
+          />
+          <a
+            class="InputIcon position-absolute end-0 me-1"
+            style="
+              background-color: #47176d;
+              border-radius: 50%;
+              color: white;
+              width: 30px;
+              height: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 10;
+            "
+            onclick="CheckAndAddLocal()"
+          >
+            <i
+              class="bi bi-search"
+              style="font-size: 20px"
+            ></i>
+          </a>
+            <ul class="suggest w-100 mt-1 px-3" style="z-index: 30;background-color: white;color: black;border-radius: 10px;"></ul>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row g-4 d-flex flex-row justify-content-center mx-3 ROWCARDS">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div
+            class="card d-flex justify-content-center align-items-center IspanCard"
+            style="border-left: 3px solid #a155ed !important"
+          >
+            <div class="CardIcon">
+              <i class="fas fa-language CardIcon_I"></i>
+            </div>
+            <div class="CardText mt-3">Tercume</div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div
+            class="card d-flex justify-content-center align-items-center IspanCard"
+            style="border-left: 3px solid #ed5555 !important"
+          >
+            <div class="CardIcon">
+              <i class="fas fa-file-signature CardIcon_I"></i>
+            </div>
+            <div class="CardText mt-3">Tesriflenme</div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="./sozluk.html" style="text-decoration: none;"><div
+            class="card d-flex justify-content-center align-items-center IspanCard"
+            style="border-left: 3px solid #5bd759 !important"
+          >
+            <div class="CardIcon">
+              <i class="fas fa-file-signature CardIcon_I"></i>
+            </div>
+            <div class="CardText mt-3">Sozluk</div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="./meqaleler.html" style="text-decoration: none;">
+          <div
+            class="card d-flex justify-content-center align-items-center IspanCard"
+            style="border-left: 3px solid #ff8a35 !important"
+          >
+            <div class="CardIcon">
+              <i class="fas fa-file-signature CardIcon_I"></i>
+            </div>
+            <div class="CardText mt-3">Meqaleler</div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="./metnler.html" style="text-decoration: none;">
+          <div
+            class="card d-flex justify-content-center align-items-center IspanCard"
+            style="border-left: 3px solid #ff8a35 !important"
+          >
+            <div class="CardIcon">
+              <i class="fas fa-file-signature CardIcon_I"></i>
+            </div>
+            <div class="CardText mt-3">Metnler</div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="container mt-5" style="max-width: 64%; min-width: 258px">
+        <div class="row g-3">
+          <div class="col-md-6 col-12">
+            <div class="card IspanBottomCard text-center py-3">
+              <div class="CardIcon_I">
+                <i class="far fa-calendar-alt"></i>
+              </div>
+              <div class="CardTextBottom  ">En cox axtarilan soz</div>
+              <div class="CardBottom d-flex justify-content-center" style="color: #431667">
+                <b class="CardTextBottomFirst"></b>
+                <div class="player">
+                  <img src=""  class="fas fa-volume-up ms-2 iconn" onclick="togglePlay0(this)" id="button">
+                  <audio>
+                      <source src="https://www.wordreference.com/audio/es/Castellano/es186017.mp3" />
+                  </audio>
+              </div> 
+             </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12">
+            <div class="card IspanBottomCard text-center py-3">
+              <div class="CardIcon_I">
+                <i class="far fa-calendar-alt"></i>
+              </div>
+              <div class="CardTextBottom">En cox axtarilan soz</div>
+              <div class="CardBottom  d-flex justify-content-center" style="color: #431667">
+                <b class="CardTextBottomSecond"></b>
+                <div class="player">
+                  <img src=""  class="fas fa-volume-up ms-2 iconn" onclick="togglePlay1(this)" id="button">
+                  <audio>
+                      <source src="https://www.wordreference.com/audio/es/Castellano/es188549.mp3" />
+                  </audio>
+              </div>              
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="py-5">
+      <div class="FooterLeft">
+        Ispanadicto ©
+        <span class="tarix"></span>
+        Bütün hüquqlar qorunur
+      </div>
+      <div class="FooterRight">
+        <i class="fab fa-facebook" style="font-size: 24px; color: #431667"></i>
+        <i
+          class="fab fa-instagram mx-4"
+          style="font-size: 24px; color: #431667"
+        ></i>
+        <i class="fab fa-twitter" style="font-size: 24px; color: #431667"></i>
+      </div>
+    </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+  <script>
+document.getElementsByClassName("onMobileMenu")[0].style.display = "none";
+
+    $(document).ready(function(){
+      var clickCount=0;
+        $(".sagICon").click(function(){
+
+      if(clickCount%2==0){
+        $(".onMobileMenu").slideDown();
+      $(".onMobileMenu").css("display","block")
+
+      }
+      else{
+      $(".onMobileMenu").slideUp();
+      }
+      clickCount+=1;
+
+      });
+    });
+    </script>
+
+
+</html>

@@ -1,0 +1,192 @@
+main {
+  background-image: url(https://ispanadicto.az/static/media/Background.4dcd5448.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 598px;
+  padding-top: 5%;
+}
+.headerLeft ul::before {
+  content: "";
+  background-color: #dddddd;
+  width: 2px;
+  height: 20px;
+}
+header {
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+}
+
+.CardIcon_I {
+  font-size: 30px;
+  color: #47176d;
+}
+.CardText {
+  color: black;
+  font-weight: 400;
+}
+.IspanCard {
+  width: 100%;
+  height: 100px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.TwoCards {
+  margin: 0 140px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.IspanBottomCard {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  border-radius: 20px !important;
+  border-top: 3px solid #431667 !important;
+}
+.headerLeft ul {
+  display: flex !important;
+  flex-direction: row;
+}
+.headerRight ul {
+  display: flex !important;
+  flex-direction: row;
+}
+.Home {
+  display: flex !important;
+  position: relative;
+  flex-direction: row;
+}
+.headerRight {
+  position: absolute;
+  right: 0;
+}
+.Headers {
+  display: flex;
+  padding-top: 0.9%;
+}
+.sagICon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .headerLeft {
+    display: none !important;
+  }
+  .sagICon {
+    display: flex;
+  }
+}
+// <!-- ------------------------------ -->
+
+// <!-- ------------------------------ -->
+.ROWCARDS {
+  padding-top: 7%;
+}
+footer {
+  margin-top: 20% !important;
+  background-image: url(data:image/png;base64,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ACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACCI/wD3u9cMunbo0QAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 70px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.FooterRight {
+  display: flex;
+}
+@media (max-width: 470px) {
+  footer {
+    display: block !important;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+  }
+  .FooterRight,
+  .FooterLeft {
+    display: block;
+  }
+}
+.InputIcon:hover {
+  cursor: pointer;
+}
+// <!-- --------------------------autocomplete yaradacam-------------------------------- -->
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+// <!-- --------------------------autocomplete yaratdim-------------------------------- -->
+.suggest li {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  padding-left: 3% !important;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.InputIcon {
+  position: relative !important;
+}
+.suggest {
+  position: absolute !important ;
+  top: 100%;
+}
